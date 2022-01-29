@@ -16,23 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEb-nI-V55">
-                                <rect key="frame" x="87" y="369" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BearIcon" translatesAutoresizingMaskIntoConstraints="NO" id="55a-zv-oUN">
+                                <rect key="frame" x="77" y="224" width="260" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="SJz-Ij-Gqb"/>
+                                    <constraint firstAttribute="width" constant="260" id="vzE-zR-xp8"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOGER APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-ru-ORE">
+                                <rect key="frame" x="67" y="499" width="280" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="21c-vg-nIt"/>
+                                    <constraint firstAttribute="height" constant="140" id="QXy-V3-yUR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="55a-zv-oUN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3pO-Bi-GdY"/>
+                            <constraint firstItem="wSY-ru-ORE" firstAttribute="top" secondItem="55a-zv-oUN" secondAttribute="bottom" constant="50" id="4mZ-as-5QX"/>
+                            <constraint firstItem="wSY-ru-ORE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GCh-FJ-T0l"/>
+                            <constraint firstItem="55a-zv-oUN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="UnL-hM-JE4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BearIcon" width="42.5" height="42.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
